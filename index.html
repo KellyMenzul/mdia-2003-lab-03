@@ -24,12 +24,26 @@
 
 <body class="page page-home">
   <header class="page__header">
-    <div class="row"></div>
+    <div class="row m-1-2">
+      <nav class="mobile-nav m-hide l-hide">
+        mobile menu
+      </nav>
+      <div class="column-menu">
+        <img class="logo" src="img/placeholder.svg">
+      </div>
+      <nav class="column main-nav">
+        <a href="#" class="main-nav__item abc">Home</a>
+        <a href="#" class="main-nav__item">Pages</a>
+        <a href="#" class="main-nav__item">Blog</a>
+        <a href="#" class="main-nav__item">Portfolio</a>
+        <a href="#" class="main-nav__item">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <div class="page__slider">
     <div class="row">
-      <div class="column">
+      <div class="column slider__image">
         <img src="img/placeholder.svg" alt="slider placeholder">
       </div>
     </div>
@@ -38,42 +52,50 @@
   <div class="page__intro">
     <div class="row">
       <h1 class="heading">
-        Hey Guys! Main intro heading here<br>
-        It is a responsive layout.
+        Hey Guys! This is the <span class="blue-text">Metrolics</span> theme. <br>
+        It sports a resposive layout with a  mobile layout
       </h1>
     </div>
   </div>
 
   <section class="about">
-    <div class="row">
-      <div class="column">
+    <div class="row l-col-4 m-col-2">
+      <div class="column span-full">
         <h2 class="heading">
           Things That We Do!
         </h2>
+        <p class="heading sub-head">Ask us what we can do for you</p>
       </div>
-      <div class="column">
-        <h3 class="heading">Subheading</h3>
+      <div class="column about__content">
+        <h3 class="heading">Web Solutions</h3>
+        <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials</p>
       </div>
-      <div class="column">
-        <h3 class="heading">Subheading</h3>
+      <div class="column about__content">
+        <h3 class="heading">Photography</h3>
+        <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials</p>
       </div>
-      <div class="column">
-        <h3 class="heading">Subheading</h3>
+      <div class="column about__content">
+        <h3 class="heading">Web Development</h3>
+        <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials</p>
       </div>
-      <div class="column">
-        <h3 class="heading">Subheading</h3>
+      <div class="column about__content">
+        <h3 class="heading">Web Design</h3>
+        <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials</p>
       </div>
     </div>
   </section>
   
   <section class="projects--new">
-    <div class="row">
-      <div class="column">
+    <div class="row m-col-2 l-col-3">
+      <div class="column span-full">
         <h2 class="heading">
-          WaaaazzUUppp???!
+          What's Up Lately?
         </h2>
+        <p class="heading sub-head">
+          Read up on our latest work
+        </p>
       </div>  
-      <div class="column">
+      <div class="column special-project">
         <figure class="project">
           <img src="img/placeholder.svg" alt="placeholder">
           <figcaption class="project__caption">
@@ -101,11 +123,12 @@
   </section> <!--projects-new ends here-->
 
   <section class="projects">
-    <div class="row">
-      <div class="column">
+    <div class="row m-col-2 l-col-3">
+      <div class="column span-full">
         <h2 class="heading">
-          Our latest projects
+          Our Latest Projects
         </h2>
+        <p class="heading sub-head">Client happy? We are happy.</p>
       </div>  
       <div class="column">
         <figure class="project">
@@ -159,11 +182,14 @@
   </section> <!--projects-new ends here-->
 
   <section class="thingsofabove">
-    <div class="row">
-      <div class="column">
+    <div class="row l-col-2">
+      <div class="column span-full">
         <h2 class="heading">
           Thingsofabove
         </h2>
+        <p class="heading sub-head">
+          Misc stuff we could not put anyplace else
+        </p>
       </div>
       <div class="column">
         <p>GUI element here</p>
@@ -175,7 +201,7 @@
   </section>
 
   <div class="sponsors">
-    <div class="row">
+    <div class="row m-col-5">
       <div class="column">
         <img src="img/placeholder.svg" alt="placeholder">
       </div>
@@ -187,30 +213,58 @@
       </div>
       <div class="column">
         <img src="img/placeholder.svg" alt="placeholder">
-      </div>      <div class="column">
+      </div>      
+      <div class="column">
         <img src="img/placeholder.svg" alt="placeholder">
       </div>
     </div>
   </div>
 
   <footer class="page__footer">
-    <div class="row">
-      <div class="page__footer__intro column">
-        <h3 class="heading">
+    <div class="row m-col-2 l-col-4">
+      <div class="page__footer__intro column span-full">
+        <h3 class="heading peewee">
           Peewee Herman Intro
         </h3>
+        <p>Peewee has over 10 years experience in the industry. He is our Creative Director, digital designer, web designer and front-end developer. He is also pretty good with a sketchbook. Before starting the company Peewee worked as a designer and studio manager for a design house who boasted a number of big name clients.</p>
       </div>
-      <div class="column">
-        <h4>footer subheading</h4>
+      <div class="column foot--hide">
+        <h4>About Us</h4>
+        <p class="footer--words">Minions ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha po kass tulaliloo potatoooo. 
+          Bee do bee do bee do chasy ti aamoo! Po kass daa bee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo 
+          belloo! Bananaaaa aaaaaah butt</p>
       </div>
-      <div class="column">
-        <h4>footer subheading</h4>
+      <div class="column flickr foot--hide">
+        <h4>Flickr Photos</h4>
+        <div class="sub-grid m-col-3">
+          <figure class="column">
+            <img src="img/placeholder.svg" alt="placeholder">
+          </figure>
+          <figure class="column">
+            <img src="img/placeholder.svg" alt="placeholder">
+          </figure>
+          <figure class="column">
+            <img src="img/placeholder.svg" alt="placeholder">
+          </figure>
+          <figure class="column">
+            <img src="img/placeholder.svg" alt="placeholder">
+          </figure>
+          <figure class="column">
+            <img src="img/placeholder.svg" alt="placeholder">
+          </figure>
+          <figure class="column">
+            <img src="img/placeholder.svg" alt="placeholder">
+          </figure>
+        </div>
       </div>
-      <div class="column">
-        <h4>footer subheading</h4>
+      <div class="column spacing">
+        <h4>Recent Tweets</h4>
+        <p><span class="username">@Minions</span> - ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha po kass. </p>
+        <p><span class="username">@Minions</span> - ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha po kass. </p>
       </div>
-      <div class="column">
-        <h4>footer subheading</h4>
+      <div class="column spacing foot--hide">
+        <h4>NewsLetter</h4>
+        <p>ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha po kass tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh</p>
       </div>
     </div>
 

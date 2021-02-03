@@ -90,19 +90,261 @@ img{
 
 h1 {
   color: black;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 2;
+}
+
+h2 {
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 2;
+}
+
+h3 {
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 2;
+}
+
+h4 {
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 2;
+}
+
+.blue-text {
+  color: #34b5e0;
+}
+
+.sub-head {
+  color: #cbcbcb;
+}
+
+.username {
+  color: #1bade6;
 }
 
 /* ==========================================================================
    LAYOUT
    ========================================================================== */
 
+div, section, footer, header {
+  /* border: 1px solid #ccc; */
+}
+
+.column {
+  position: relative;
+  /* background-color: rgb(243, 222, 194);
+  margin: 1rem; */
+}
+
 .heading {
   text-align: center;
 }
 
+.page__footer {
+  background-color: #16242f;
+  color: white;
+}
+
+.sponsors {
+  padding-bottom: 3em;
+}
 
 
 
+.logo {
+  max-height: 2.5rem;
+}
+
+.main-nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.main-nav__item {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 1rem 6rem 1rem 30%;
+  font-size: 1.3rem;
+  text-decoration: none;
+  text-align: left;
+  color: white;
+  line-height: 4rem;
+  background-repeat: no-repeat;
+  background-position-x: 44%;
+  background-position-y: center;
+  background-size: 3.1rem, 1.7rem;
+}
+
+.main-nav__item::after {
+  content: ">";
+  display: inline-block;
+  position: absolute;
+  right: 1rem;
+}
+
+.main-nav__item.active::after {
+  content: "";
+}
+/*Smallonly*/
+
+@media screen and (max-width:39.9375em) {
+  .logo {
+    max-height: 3rem;
+  }
+  .s-show {
+    display: flex;
+  }
+  .slider__image {
+    display: none;
+  }
+  .foot--hide{
+    display: none;
+  }
+  .column {
+    padding: 2em 5em;
+  }
+  .mobile-nav {
+    background-image:url(../img/menu.svg);
+    background-repeat: no-repeat;
+    background-size: 1.8rem;
+    background-position: center center;
+    background-color: #2a6eeb;
+    position: absolute;
+    right: 1rem;
+    top: 0rem;
+    z-index: 1;
+    font-size: 0rem;
+    padding: 1.5rem;
+
+  }
+  .main-nav__item::after {
+    display: inline-block;
+    position: absolute;
+    right: 1rem;
+  }
+}
+
+/*Mediumandup*/
+
+@media screen and (min-width:40em) {
+  .row{
+    display: grid;
+    width: 85vw;
+    max-width: 70rem;
+    margin: 0 auto;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+  }
+
+  .sub-grid {
+    display: grid;
+    column-gap: 0.5rem;
+    row-gap: 0.5em;
+    min-width: 25em;
+  }
+  .m-col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .m-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .m-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .m-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .m-1-2 {
+    grid-template-columns: 1fr 2fr;
+  }
+  .span-full {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-nav__item {
+    padding: 4rem 1rem 0rem 0.5rem;
+    line-height: 2rem;
+    font-size: 0.8rem;
+    text-align: left;
+    background-color: rgb(184, 184, 184);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 2.3em, 1.4em;
+  }
+  .m-hide {
+    display: none;
+  }
+  .logo {
+    padding-top: 3.5em;
+    max-height: 2.5rem;
+  }
+}
+
+
+/*Mediumonly*/
+
+@media screen and (min-width:40em)and(max-width:63.9375em) {
+  .special-project {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+  .special-project img{
+    max-height: 20rem;
+  }
+}
+/*Largeandup*/
+
+@media screen and (min-width:64em) {
+  .l-col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .l-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .l-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .l-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .l-col-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+} 
+
+/*Largeonly*/
+
+@media screen and (min-width:64em)and(max-width:74.9375em) {}
+
+
+/* page slider */
+.page__slider {
+  background-color: rgb(230, 230, 230);
+}
+
+.page__slider img {
+  height: 25vh;
+}
+
+.project {
+  position: relative;
+  margin: 0;
+}
+
+.project__caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(128, 128, 128, 60%);
+}
 
 /* ==========================================================================
    MODULES
@@ -111,6 +353,45 @@ h1 {
 /* ==========================================================================
    THEME
    ========================================================================== */
+   .page__footer {
+     background-color: #16242f;
+     background-image: url(../img/bar.png);
+     background-repeat: no-repeat;
+     background-position: bottom right;
+   }
+
+   .peewee {
+    color: white;
+  }
+  
+  .spacing {
+    padding-bottom: 10em;
+  }
+
+  .main-nav__item:nth-child(1) {
+    background-color: #25c389;
+    background-image: url(../img/idea.svg);
+  }
+  .main-nav__item:nth-child(2) {
+    background-color: #ffb901;
+    background-image: url(../img/idea.svg);
+  }
+  .main-nav__item:nth-child(3) {
+    background-color: #de6262;
+    background-image: url(../img/idea.svg);
+  }
+  .main-nav__item:nth-child(4) {
+    background-color: #1691bd;
+    background-image: url(../img/idea.svg);
+  }
+  .main-nav__item:nth-child(5) {
+    background-color: #166ba2;
+    background-image: url(../img/idea.svg);
+  }
+
+
+
+
 
 /*
  * Hide visually and from screen readers
